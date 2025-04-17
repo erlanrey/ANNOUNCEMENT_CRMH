@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Announcements</title>
+</head>
+<body>
+  <h1>Announcements</h1>
+  {% for category, announcement in announcements.items() %}
+    <div>
+      <h2>{{ category }}</h2>
+      <p>{{ announcement }}</p>
+    </div>
+  {% endfor %}
+</body>
+</html>
